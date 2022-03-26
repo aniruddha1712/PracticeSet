@@ -11,12 +11,15 @@ namespace PracticeSet
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to PracticeSet");
-            Console.WriteLine("1:FindPrime\n2:");
+            Console.WriteLine("1:FindPrime\n2:Factorial\n3:");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
                 case 1:
                     PrimeNumber.FindPrime();
+                    break;
+                case 2:
+                    Factorial.FindFactorial();
                     break;
                 default:
                     Console.WriteLine("Enter valid input");
