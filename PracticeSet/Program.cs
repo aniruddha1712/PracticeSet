@@ -11,7 +11,7 @@ namespace PracticeSet
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to PracticeSet");
-            Console.WriteLine("1:FindPrime\n2:Factorial\n3:FindSumOfDigits\n4:FibonacciSeries");
+            Console.WriteLine("1:FindPrime\n2:Factorial\n3:FindSumOfDigits\n4:FibonacciSeries\n5:FindSimpleInterest");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -26,6 +26,9 @@ namespace PracticeSet
                     break;
                 case 4:
                     Fibonacci.FibonacciSeries();
+                    break;
+                case 5:
+                    SimpleInterest.FindSI();
                     break;
                 default:
                     Console.WriteLine("Enter valid input");
